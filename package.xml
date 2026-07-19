@@ -3,13 +3,21 @@
   <name>easy_pid_controller_pkg</name>
   <version>0.1.0</version>
   <description>
-    鐙珛鐨?PID 鎺у埗鍣ㄥ簱锛屾敮鎸佷綅缃紡 P/I/D 涓夐」瀹屾暣鎺у埗銆?    鎻愪緵鏍囬噺鍜屼簩缁村悜閲忎袱绉嶆帴鍙ｏ紝甯︾Н鍒嗛檺骞呫€佸井鍒嗕綆閫氭护娉€?    姝诲尯鍜岄潤鎽╂摝琛ュ伩銆傚唴缃法浠诲姟瀹夊叏淇濇姢锛岃嚜鍔ㄦ娴嬮暱鏃堕棿
-    闂撮殧骞舵竻闆跺巻鍙茬姸鎬併€?  </description>
+    独立的 PID 控制器库，支持位置式 P/I/D 三项完整控制。
+    提供标量和二维向量两种接口，带积分限幅、微分低通滤波、
+    死区和静摩擦补偿。内置跨任务安全保护，自动检测长时间
+    间隔并清零历史状态。
+  </description>
+
   <maintainer email="1845656097@qq.com">robopioneer</maintainer>
   <license>MIT</license>
+
   <buildtool_depend>catkin</buildtool_depend>
+
   <depend>roscpp</depend>
+
   <build_depend>libeigen3-dev</build_depend>
+
   <export>
     <build_type>catkin</build_type>
   </export>
